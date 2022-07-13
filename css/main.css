@@ -1,0 +1,36 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 80px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav nav nav nav nav"
+      ". prof-pic prof-info prof-info prof-info ."
+      ". articles articles articles articles ."
+      "footer footer footer footer footer footer";
+    height:100vh;
+  }
+  .container * {
+    border: 2px solid green;
+  }
+  
+  .nav { 
+    grid-area: nav;
+  }
+  
+  .footer { 
+    grid-area: footer; 
+  }
+  
+  .prof-info { 
+    grid-area: prof-info; 
+  }
+  
+  .articles { 
+    grid-area: articles; 
+  }
+  
+  .prof-pic { 
+    grid-area: prof-pic; 
+  }
+  
