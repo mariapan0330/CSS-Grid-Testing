@@ -12,7 +12,7 @@
   }
 
   .container > div {
-    border: 2px solid red;
+    border: 2px solid rgb(173, 96, 96);
   }
   
   .nav {
@@ -45,6 +45,19 @@
   
   .prof-info { 
     grid-area: prof-info; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .prof-info h1 {
+    align-self:center;
+  }
+
+  .contact-me ul, li {
+    list-style: none;
+    padding: 0px;
   }
   
   .posts { 
